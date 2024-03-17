@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Login.css">
+    <title>로그인</title>
+    <link rel="icon" href="/icon/Logo.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <!-- 로고를 포함한 헤더 영역 -->
+        <div class="logo-container">
+            <a href="/html/MainHome.html">
+                <img src="/ICON/MemberLogo.png" alt="로고">
+            </a>
+        </div>
+    </header>
+
+    <!-- 로그인 폼 -->
+    <form id="loginForm">
+        <label for="loginUsername">아이디</label>
+        <input type="text" id="loginUsername" name="username">
+
+        <!-- 뒤로 가기 버튼 -->
+        <!-- 수정: 뒤로 가기 버튼 클릭 시 MainHome.html로 이동 -->
+        <a href="/html/MainHome.html" id="back-btn" style="position: absolute; top: 10px; right: 10px;">
+            <img src="/icon/화살표.png" alt="화살표" style="width: 30px; height: 30px;">
+        </a>
+
+        <br>
+
+        <label for="loginPassword">비밀번호</label>
+        <input type="password" id="loginPassword" name="password">
+
+        <br>
+        <br>
+        <input type="submit" value="로그인" id="loginButton">
+
+        <!-- 추가: 아이디 찾기, 비밀번호 찾기, 회원가입 링크 -->
+        <div class="additional-links">
+            <a href="/html/Authentication.html" class="button" id="findId">아이디 찾기</a>
+            <a href="/html/Authentication.html" class="button" id="findPassword">비밀번호 찾기</a>
+            <a href="/html/Member.html" class="button">회원가입</a>
+        </div>
+
+        <br>
+        <!-- 소셜 미디어 로그인 버튼들 -->
+        <div class="social-buttons">
+            <a href="/html/MainHome.html" onclick="loginOnKakao()">
+                <img src="/icon/카카오톡.png" alt="KakaoTalk" width="40" height="40" style="margin-right: 40px;">
+            </a>
+
+            <a href="/html/MainHome.html" onclick="loginOnInstagram()">
+                <img src="/icon/인스타그램.png" alt="Instagram" width="40" height="40" style="margin-right: 40px;">
+            </a>
+
+            <a href="/html/MainHome.html" onclick="loginOnFacebook()">
+                <img src="/icon/페이스북.png" alt="Facebook" width="40" height="40" style="margin-right: 40px;">
+            </a>
+
+            <a href="/html/MainHome.html" onclick="loginOnTwitter()">
+                <img src="/icon/트위터.png" alt="Twitter" width="40" height="40">
+            </a>
+        </div>
+    </form>
+
+    <!-- 페이지 하단에 위치한 푸터 -->
+    <footer>
+        <p>&copy; 2024 아이엠그라운드. All rights reserved. | <a href="/html/MainHome.html" style="color:white;">Privacy
+                Policy</a> | <a href="/html/MainHome.html" style="color: white;">프로젝트</a></p>
+    </footer>
+
+    <!-- JavaScript 파일 -->
+    <script src="/JS/Login.js"></script>
+</body>
+
+</html>

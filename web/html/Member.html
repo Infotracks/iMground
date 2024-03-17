@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <!-- 문서의 문자 인코딩 및 뷰포트 설정 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS 파일 링크 -->
+    <link rel="stylesheet" href="/css/Member.css">
+    <!-- 페이지 제목 및 아이콘 설정 -->
+    <title>회원가입</title>
+    <link rel="icon" href="/ICON/Logo.png" type="image/png">
+</head>
+
+<body>
+    
+    <!-- 헤더 섹션 -->
+    <header>
+        <!-- 로고 컨테이너 -->
+        <div class="logo-container">
+            <!-- 메인 홈 페이지로 이동하는 로고 이미지 -->
+            <a href="/html/MainHome.html">
+                <img src="/ICON/MemberLogo.png" alt="로고">
+            </a>
+        </div>
+    </header>
+
+    <!-- 회원가입 폼 -->
+    <form id="signupForm">
+
+                <!-- 뒤로 가기 버튼 -->
+                <!-- 수정: 뒤로 가기 버튼 클릭 시 MainHome.html로 이동 -->
+                <a href="/html/MainHome.html" id="back-btn" style="position: absolute; top: 10px; right: 10px;">
+                    <img src="/icon/화살표.png" alt="화살표" style="width: 30px; height: 30px;">
+                </a>
+
+        <!-- 아이디 입력란 -->
+        <div class="input-group">
+            <label for="username">아이디</label>
+            <div class="input-with-button">
+                <input type="text" id="username" name="username">
+                <button type="button" id="checkUsername">중복확인</button>
+            </div>
+        </div>
+
+        <!-- 비밀번호 입력란 -->
+        <div class="input-group">
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password">
+
+            <label for="confirmPassword">비밀번호 확인</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+
+            <!-- 이메일 입력란 -->
+            <label for="email">이메일</label>
+            <div class="input-with-button">
+                <input type="email" id="email" name="email">
+                <button type="button" id="checkEmailButton">중복확인</button>
+            </div>
+        </div>
+
+        <!-- 이름 및 휴대폰 번호 입력란 -->
+        <div class="input-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name">
+
+            <label for="phoneNumber">휴대폰 번호</label>
+            <div class="phone-input-group">
+                <input type="tel" id="phoneNumber" name="phoneNumber">
+                <!-- 통신사 선택 드롭다운 -->
+                <select id="carrier" name="carrier">
+                    <option value="--- 통신사 선택 ---">--- 통신사 선택 ---</option>
+                    <option value="SKT">SKT</option>
+                    <option value="KT">KT</option>
+                    <option value="LG">LG U+ </option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 회원가입 제출 버튼 -->
+        <input type="submit" value="회원가입" id="signupButton">
+    </form>
+
+    <!-- 페이지 하단에 위치한 푸터 -->
+    <footer>
+        <!-- 저작권 정보 및 관련 링크 -->
+        <p>&copy; 2024 아이엠그라운드. All rights reserved. | <a href="/html/MainHome.html" style="color:white;">Privacy
+                Policy</a> | <a href="/html/MainHome.html" style="color: white;">프로젝트</a></p>
+    </footer>
+    
+    <!-- JavaScript 파일 링크 -->
+    <script src="/JS/Member.js"></script>
+</body>
+
+</html>

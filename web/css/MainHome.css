@@ -1,0 +1,210 @@
+/* Global styles */
+
+body {
+    font-family: Arial, sans-serif;
+    /* 전체 페이지에 대한 글꼴 설정 */
+    margin: 0;
+    /* 바디 마진 초기화 */
+    padding: 0;
+    /* 바디 패딩 초기화 */
+    background-color: #f2f2f2;
+    /* 페이지 배경색 설정 */
+}
+
+/* Header styles */
+
+header {
+    background-color: #333;
+    /* 헤더 배경색 설정 */
+    color: white;
+    /* 헤더 텍스트 색상 설정 */
+    padding: 10px;
+    /* 헤더 내부 패딩 설정 */
+    display: flex;
+    /* 플렉스 박스로 설정하여 내부 요소 정렬 */
+    justify-content: space-between;
+    /* 요소 간 간격을 최대한 넓게 설정 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+}
+
+.logo-container {
+    display: flex;
+    /* 로고 컨테이너를 플렉스 박스로 설정하여 내부 요소 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+}
+
+.logo-container img {
+    width: 50px;
+    /* 로고 이미지 가로 크기 설정 */
+    height: auto;
+    /* 높이 자동 조정 */
+    margin-right: 10px;
+    /* 로고 이미지와 다음 요소 간 간격 설정 */
+}
+
+/* Navigation styles */
+
+nav ul {
+    list-style: none;
+    /* 목록 스타일 제거 */
+    margin: 0;
+    /* 네비게이션 마진 초기화 */
+    padding: 0;
+    /* 네비게이션 패딩 초기화 */
+    display: flex;
+    /* 플렉스 박스로 설정하여 내부 요소 정렬 */
+}
+
+nav li {
+    margin-right: 20px;
+    /* 네비게이션 아이템 간 간격 설정 */
+    /* 모바일 화면에서 좀 더 좁은 간격으로 조절 */
+}
+
+nav a {
+    text-decoration: none;
+    /* 링크 밑줄 제거 */
+    color: white;
+    /* 링크 텍스트 색상 설정 */
+    font-weight: bold;
+    /* 링크 텍스트 굵게 설정 */
+}
+
+/* Main content container styles */
+
+.container-box {
+    max-width: 80%;
+    /* 컨테이너 최대 너비 설정 */
+    margin: 0 auto;
+    /* 가운데 정렬 */
+    padding-top: 1%;
+    /* 위쪽 패딩 설정 */
+    box-sizing: border-box;
+    /* 상자 모델 설정 */
+}
+
+/* Community navigation styles */
+
+.community-nav {
+    background-color: #666;
+    /* 커뮤니티 네비게이션 배경색 설정 */
+    padding: 10px;
+    /* 내부 패딩 설정 */
+    text-align: center;
+    /* 텍스트 가운데 정렬 */
+}
+
+.community-nav ul {
+    list-style: none;
+    /* 목록 스타일 제거 */
+    margin: 0;
+    /* 마진 초기화 */
+    padding: 0;
+    /* 패딩 초기화 */
+    display: flex;
+    /* 플렉스 박스로 설정하여 내부 요소 정렬 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    box-sizing: border-box;
+    /* 상자 모델 설정 */
+    text-align: center;
+    /* 텍스트 가운데 정렬 */
+}
+
+.community-nav li {
+    margin: 0 auto;
+    /* 왼쪽 오른쪽 마진을 자동으로 설정하여 가운데 정렬 */
+    box-sizing: border-box;
+    /* 상자 모델 설정 */
+}
+
+/* Community container styles */
+
+.community-container {
+    display: flex;
+    /* 커뮤니티 컨테이너를 플렉스 박스로 설정하여 내부 요소 정렬 */
+    flex-wrap: wrap;
+    /* 요소가 넘칠 경우 줄 바꿈 설정 */
+    justify-content: space-between;
+    /* 요소 사이 간격 최대로 설정 */
+    box-sizing: border-box;
+    /* 상자 모델 설정 */
+}
+
+/* Individual community styles */
+
+.community {
+    width: calc(48% - 10px);
+    /* 각 커뮤니티 요소 너비 설정 */
+    background-color: white;
+    /* 배경색 설정 */
+    padding: 20px;
+    /* 내부 패딩 설정 */
+    margin-bottom: 20px;
+    /* 아래쪽 마진 설정 */
+    border: 1px solid #ccc;
+    /* 테두리 설정 */
+    box-sizing: border-box;
+    /* 상자 모델 설정 */
+}
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    /* 푸터 배경색 설정 */
+    color: white;
+    /* 푸터 텍스트 색상 설정 */
+    text-align: center;
+    /* 텍스트 가운데 정렬 */
+    padding: 10px;
+    /* 내부 패딩 설정 */
+    position: relative;
+    /* 상대 위치 설정 */
+    max-width: 100%;
+    /* 최대 너비 100% 설정 */
+    bottom: -47px;
+    /* 하단으로 47px만큼 이동 */
+}
+
+footer p {
+    margin: 0;
+    /* 마진 초기화 */
+}
+
+footer a {
+    color: white;
+    /* 링크 텍스트 색상 설정 */
+    text-decoration: none;
+    /* 링크 밑줄 제거 */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    /* 링크에 마우스를 올렸을 때 밑줄 표시 */
+}
+
+/* Responsive styles for screens smaller than 768px */
+
+@media (max-width: 768px) {
+    nav li {
+        margin-right: 10px;
+        /* 모바일에서 좀 더 좁은 간격으로 조절 */
+    }
+
+    .community {
+        width: 100%;
+        /* 커뮤니티 요소를 모바일 화면에 맞게 전체 너비로 설정 */
+        margin-right: 0;
+        /* 오른쪽 마진 제거 */
+    }
+
+    p {
+        margin-top: 5%;
+        /* 문단의 상단 여백 설정 */
+        color: antiquewhite;
+        /* 텍스트 색상 설정 */
+    }
+}
