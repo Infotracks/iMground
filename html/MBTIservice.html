@@ -1,0 +1,133 @@
+<div lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>아이엠그라운드 MBTI</title>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="/css/bootstrap.css">
+
+        <!-- FONTAWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+        <!-- STYLE -->
+        <link rel="stylesheet" href="/css/style.css">
+
+        <script data-ad-client="pub-9288250492771834" async="" src="https://pagead2.googlesyndication.com/
+pagead/js/adsbygoogle.js"></script>
+        <meta http-equiv="origin-trial"
+            content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+        <meta http-equiv="origin-trial"
+            content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+        <meta http-equiv="origin-trial"
+            content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+        <meta http-equiv="origin-trial"
+            content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+    </head>
+
+    <body>
+        <div class=" vertical-center">
+
+            <div class="container">
+                <div class="row">
+                    <div class="mbti-wrap">
+                        <article class="start">
+                            <h1 class="text-center fw-b fc-w m-0">프로젝트로 알아보는 나의 <span class="fc-green">MBTI</span></h1>
+                            <p class="mt-3 text-center fc-w"></p>
+                            <button type="button" class="mt-3" onclick="start()">테스트 시작하기</button>
+                        </article>
+                        <article class="question">
+                            <div id="questionButtonsContainer">
+                                <div id="questionButtons"></div>
+                            </div>
+                            <div class="progress mt-5">
+                                <div class="progress-bar" role="progressbar" style="width: calc(100/12*1%)"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuem ax="100"></div>
+                            </div>
+                            <div class="text-wrap text-center mt-5">
+                                <h2 id="number" class="fc-w">step</h2>
+                                <h2 id="title" class="fc-w">문제</h2>
+                            </div>
+                            <input id="type" type="hidden" value="EI">
+                            <button id="A" type="button" class="mt-5">Primary</button>
+                            <button id="B" type="button" class="mt-5">Primary</button>
+                        </article>
+
+                        <article class="result">
+                            <h1 id="stat" class="text-center mt-5 fc-w fw-b fz-20">꾸미는단어</h1>
+                            <!-- <h2 id="food" class="text-center fc-w fw-b mt-2 fz-24">음식이름</h2>
+                            <img id="img" class="mt-3" src="images/lion.jpg" alt="food">
+                            <span class="text-right fz-12 fc-w mt-2">이미지 출처 : 구글검색</span> -->
+                            <h3 id="subtitle" class="text-center mt-5 fc-w fz-20">특징</h3>
+                            <h3 id="explain" class="text-center mt-2 fc-w fz-16">설명</h3>
+                            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                            <div class="share addthis_inline_share_toolbox mt-5"></div>
+                            <span>공유하기</span>
+                            <a href="#" id="kakao" target="_blank" onclick="shareKakao()">
+                                <i class="fab fa-kakao"></i>
+                            </a>
+                            <a href="#" id="instagram" target="_blank" onclick="shareInstagram()">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" id="facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" id="twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </article>
+
+                        <input type="hidden" id="EI" value="0">
+                        <input type="hidden" id="SN" value="0">
+                        <input type="hidden" id="FT" value="0">
+                        <input type="hidden" id="JP" value="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JQuery -->
+        <script src="/js/jquery.js"></script>
+
+        <!-- BOOTSTRAP -->
+        <script src="/js/popper.js"></script>
+        <script src="/js/bootstrap.js"></script>
+
+        <!-- SCRIPT -->
+        <script src="/js/script.js"></script>
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript"
+            src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6041eaf88b0d84ba"></script>
+
+        <script>
+            function shareResult(url, title) {
+                window.open(url, 'sharer', 'toolbar=0,status=0,width=626,height=436');
+                return false;
+            }
+
+            function shareKakao() {
+                window.open('https://www.kakaotalk.com', 'sharer', 'toolbar=0,status=0,width=626,height=436');
+                return false;
+            }
+        
+            function shareInstagram() {
+                alert('이미지를 다운로드하여 인스타그램에 공유해주세요!');
+                return false;
+            }
+
+            document.getElementById('facebook').onclick = function () {
+                shareResult('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, 'Facebook');
+                return false;
+            }
+
+            document.getElementById('twitter').onclick = function () {
+                shareResult('https://twitter.com/intent/tweet?url=' + window.location.href + '&text=Check%20out%20my%20MBTI%20result!', 'Twitter');
+                return false;
+            }
+        </script>
+
+    </body>
+</div>
+
+</html>

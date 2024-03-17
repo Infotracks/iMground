@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/MainHome.css">
+    <title>아이엠그라운드</title>
+    <link rel="icon" href="/ICON/Logo.png" type="image/png">
+    <link rel="stylesheet" href="/css/MainHomeGame.css">
+</head>
+
+<body>
+    <header>
+        <!-- 로고와 네비게이션 메뉴 -->
+        <div class="logo-container">
+            <a href="/html/MainHome.html" style="display: flex; align-items: center;">
+                <img src="/ICON/Logo.png" alt="로고" style="width: 50px; height: auto; margin-right: 10px;">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/html/MainHome.html" onclick="logout()">로그아웃</a></li>
+                <li><a href="/html/MyHome.html" onclick="MyHome()">내정보</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <center>
+        <!-- 로고 이미지 -->
+        <div class="body-container">
+            <a href="/html/MainHome.html">
+                <img src="/ICON/Logo.png" alt="껨티" width="auto" height="auto">
+            </a>
+        </div>
+    </center>
+
+    <div class="container-box">
+        <!-- 커뮤니티 네비게이션 -->
+        <nav class="community-nav">
+            <ul>
+                <li><a href="#game">게임</a></li>
+                <li><a href="/html/Travel.html">프로젝트</a></li>
+                <li><a href="#music">음악</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- 게임 컨테이너와 점수 표시 및 게임 시작 버튼 -->
+    <div class="game-container-wrapper">
+        <div id="game-container" class="game-container"></div>
+        <div class="score-and-button-container">
+            <div class="score-container">점수: 0</div>
+            <button id="start-game-btn" onclick="startGame()">게임 시작</button>
+        </div>
+    </div>
+    <div>
+
+        <footer>
+            <!-- 하단 푸터 -->
+            <p>&copy; 2024 아이엠그라운드. All rights reserved. | <a href="/html/MainHome.html" style="color:white;">Privacy
+                    Policy</a> | <a href="/html/MainHome.html" style="color: white;">프로젝트</a></p>
+        </footer>
+        <!-- JavaScript 파일 -->
+        <script src="/js/MainHomeGame.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', createGame);
+        </script>
+
+        <script>
+            function showAlert(menu) {
+                alert(" 미구현 기능입니다!");
+            }
+            // 로그아웃 함수를 작성합니다.
+            function logout() {
+                alert("로그아웃 완료!");
+            }
+        </script>
+</body>
+
+</html>

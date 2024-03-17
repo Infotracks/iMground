@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/MBTI.css">
+    <title>MBTI 테스트</title>
+    <link rel="icon" href="/ICON/Logo.png" type="image/png">
+</head>
+
+<body>
+    <!-- 메인 컨테이너 -->
+    <div id="main-container">
+        <!-- 로고 컨테이너 -->
+        <div id="logo-container">
+            <a href="/html/MainHome.html">
+                <img src="/ICON/Logo.png" alt="아이엠그라운드">
+            </a>
+        </div>
+
+        <!-- 질문 컨테이너 -->
+        <div id="question-container">
+            <!-- 진행 상황 표시 바 -->
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+
+            <!-- 뒤로 가기 버튼 -->
+            <button id="back-btn" style="position: absolute; top: 10px; right: 10px;">
+                <img src="/icon/화살표.png" alt="화살표" style="width: 30px; height: 30px;">
+            </button>
+
+            <!-- 질문 텍스트 -->
+            <p id="question-text">질문</p>
+
+            <!-- 예와 아니오 버튼 -->
+            <button id="yes-btn">예</button>
+            <button id="no-btn">아니오</button>
+        </div>
+
+        <!-- 결과 컨테이너 -->
+        <div id="result-container" style="display: none;">
+            <p id="result-text" style="font-size: 24px; font-weight: bold; text-align: center;">
+            </p>
+            <p id="share-text"
+                style="font-size: 18px; text-align: center; cursor: pointer; background-color: black; color: white; padding: 10px; border-radius: 5px;"
+                onclick="openSharePopup()">SNS 공유하기</p>
+            <div id="sns-icons-popup"
+                style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px; z-index: 2000; width: 300px;">
+                <a href="/html/MainHome.html" onclick="shareOnKakao()">
+                    <img src="/icon/카카오톡.png" alt="카카오톡"
+                        style="width: 50px; height: 50px; margin: 5px; cursor: pointer;">
+                </a>
+                <a href="/html/MainHome.html" onclick="shareOnInstagram()">
+                    <img src="/icon/인스타그램.png" alt="인스타그램"
+                        style="width: 50px; height: 50px; margin: 5px; cursor: pointer;">
+                </a>
+                <a href="/html/MainHome.html" onclick="shareOnFacebook()">
+                    <img src="/icon/페이스북.png" alt="페이스북"
+                        style="width: 50px; height: 50px; margin: 5px; cursor: pointer;">
+                </a>
+                <a href="/html/MainHome.html" onclick="shareOnTwitter()">
+                    <img src="/icon/트위터.png" alt="트위터" style="width: 50px; height: 50px; margin: 5px; cursor: pointer;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 페이지 번호 컨테이너 -->
+    <div id="page-number">
+        <button id="question1-btn">1</button>
+        <button id="question2-btn">2</button>
+        <button id="question3-btn">3</button>
+        <button id="question4-btn">4</button>
+        <button id="question5-btn">5</button>
+        <button id="question6-btn">6</button>
+        <button id="question7-btn">7</button>
+        <button id="question8-btn">8</button>
+        <button id="question9-btn">9</button>
+        <button id="question10-btn">10</button>
+        <button id="question11-btn">11</button>
+        <button id="question12-btn">12</button>
+        <button id="question13-btn">13</button>
+        <button id="question14-btn">14</button>
+        <button id="question15-btn">15</button>
+        <button id="question16-btn">16</button>
+        <button id="question17-btn">17</button>
+        <button id="question18-btn">18</button>
+        <button id="question19-btn">19</button>
+        <button id="question20-btn">20</button>
+    </div>
+    <!-- 푸터 -->
+    <footer>
+        <p>&copy; 2024 아이엠그라운드. All rights reserved. | <a href="/html/MainHome.html" style="color:white;">Privacy
+                Policy</a> | <a href="/html/MainHome.html" style="color: white;">프로젝트</a></p>
+    </footer>
+    <script src="/JS/MBTI.js"></script>
+    <script>
+        function shareOnKakao() {
+            alert("카카오톡으로 공유 완료!!");
+        }
+
+        function shareOnInstagram() {
+
+            alert("인스타그램으로 공유 완료!!");
+        }
+
+        function shareOnFacebook() {
+            alert("페이스북으로 공유 완료!!");
+        }
+
+        function shareOnTwitter() {
+            alert("트위터로 공유 완료!!");
+        }
+    </script>
+</body>
+
+</html>
