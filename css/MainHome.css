@@ -75,7 +75,7 @@ nav a {
 /* Main content container styles */
 
 .container-box {
-    max-width: 80%;
+    max-width: 60%;
     /* 컨테이너 최대 너비 설정 */
     margin: 0 auto;
     /* 가운데 정렬 */
@@ -90,7 +90,7 @@ nav a {
 .community-nav {
     background-color: #666;
     /* 커뮤니티 네비게이션 배경색 설정 */
-    padding: 10px;
+    padding: 5px;
     /* 내부 패딩 설정 */
     text-align: center;
     /* 텍스트 가운데 정렬 */
@@ -165,8 +165,8 @@ footer {
     /* 상대 위치 설정 */
     max-width: 100%;
     /* 최대 너비 100% 설정 */
-    bottom: -47px;
-    /* 하단으로 47px만큼 이동 */
+    bottom: -57px;
+    /* 하단으로 57px만큼 이동 */
 }
 
 footer p {

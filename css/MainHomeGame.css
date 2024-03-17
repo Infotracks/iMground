@@ -2,7 +2,7 @@
 
 /* 게임 컨테이너와 게임 내용의 스타일 설정 */
 .game-container-wrapper {
-    width: 80%;
+    width: 60%;
     /* 화면 너비의 80%로 설정 */
     margin: auto;
     /* 가운데 정렬 */
