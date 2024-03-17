@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="256.0" prefWidth="490.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.view.LoginController">
+   <children>
+      <Button fx:id="btnjoin" layoutX="286.0" layoutY="105.0" mnemonicParsing="false" onAction="#handleBtnjoin" prefHeight="25.0" prefWidth="70.0" text="회원가입" />
+      <Button layoutX="383.0" layoutY="25.0" mnemonicParsing="false" onAction="#handlelogin" prefHeight="59.0" prefWidth="70.0" text="로그인" />
+      <Label layoutX="14.0" layoutY="30.0" text="아이디" />
+      <Label layoutX="14.0" layoutY="58.0" text="패스워드" />
+      <TextField fx:id="tfid" layoutX="71.0" layoutY="26.0" prefHeight="25.0" prefWidth="250.0" />
+      <Button fx:id="btnidsearch" layoutX="81.0" layoutY="106.0" mnemonicParsing="false" onAction="#handleidsearch" text="아이디 찾기" />
+      <Button fx:id="btnpwdsearch" layoutX="177.0" layoutY="106.0" mnemonicParsing="false" onAction="#handlepwdsearch" text="비밀번호 찾기" />
+      <PasswordField fx:id="tfpwd" layoutX="71.0" layoutY="54.0" prefHeight="25.0" prefWidth="250.0" />
+      <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="21.0" layoutY="155.0" onMouseClicked="#handleimage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/kakao.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="140.0" layoutY="155.0" onMouseClicked="#handleimage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/instar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="253.0" layoutY="155.0" onMouseClicked="#handleimage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/facebook.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="100.0" layoutX="368.0" layoutY="155.0" onMouseClicked="#handleimage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../image/images.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

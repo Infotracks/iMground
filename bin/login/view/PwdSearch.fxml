@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="211.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="login.view.PwdSearchController">
+   <children>
+      <Label layoutX="69.0" layoutY="70.0" prefHeight="15.0" prefWidth="36.0" text="아이디" />
+      <TextField fx:id="tfid" layoutX="125.0" layoutY="66.0" prefHeight="23.0" prefWidth="223.0" />
+      <Button layoutX="380.0" layoutY="66.0" mnemonicParsing="false" onAction="#handlepwdsearch" text="찾기" />
+      <Label fx:id="lbpwd" layoutX="125.0" layoutY="145.0" prefHeight="23.0" prefWidth="302.0" />
+   </children>
+</AnchorPane>
