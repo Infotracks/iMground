@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>아이엠그라운드 MBTI</title>
+        <title>MBTI 테스트</title>
+        <link rel="icon" href="/ICON/Logo.png" type="image/png">
+
         <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="/css/bootstrap.css">
 
@@ -27,7 +29,6 @@ pagead/js/adsbygoogle.js"></script>
 
     <body>
         <div class=" vertical-center">
-
             <div class="container">
                 <div class="row">
                     <div class="mbti-wrap">
@@ -54,6 +55,11 @@ pagead/js/adsbygoogle.js"></script>
                         </article>
 
                         <article class="result">
+                                    <div class="homebutton">
+                                        <a href="MainHome.html">
+                                            <button>
+                                                <img src="/icon/Pavicon.ico" alt="Main Logo" style="max-width: 50px; height: 50px;">
+                                            </button>
                             <h1 id="stat" class="text-center mt-5 fc-w fw-b fz-20">꾸미는단어</h1>
                             <!-- <h2 id="food" class="text-center fc-w fw-b mt-2 fz-24">음식이름</h2>
                             <img id="img" class="mt-3" src="images/lion.jpg" alt="food">
@@ -62,19 +68,22 @@ pagead/js/adsbygoogle.js"></script>
                             <h3 id="explain" class="text-center mt-2 fc-w fz-16">설명</h3>
                             <!-- Go to www.addthis.com/dashboard to customize your tools -->
                             <div class="share addthis_inline_share_toolbox mt-5"></div>
-                            <span>공유하기</span>
-                            <a href="#" id="kakao" target="_blank" onclick="shareKakao()">
-                                <i class="fab fa-kakao"></i>
-                            </a>
-                            <a href="#" id="instagram" target="_blank" onclick="shareInstagram()">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" id="facebook" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" id="twitter" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
+                            <center><span style="color: white;">공유하기</span></center>
+                            <br>
+                            <div class="social-icons">
+                                <a href="#" id="kakao" target="_blank" onclick="shareKakao()">
+                                    <img src="/icon/카카오톡.png" alt="카카오톡">
+                                </a>
+                                <a href="#" id="instagram" target="_blank" onclick="shareInstagram()">
+                                    <img src="/icon/인스타그램.png" alt="인스타그램">
+                                </a>
+                                <a href="#" id="facebook" target="_blank">
+                                    <img src="/icon/페이스북.png" alt="페이스북">
+                                </a>
+                                <a href="#" id="twitter" target="_blank">
+                                    <img src="/icon/트위터.png" alt="트위터">
+                                </a>
+                            </div>
                         </article>
 
                         <input type="hidden" id="EI" value="0">
@@ -110,7 +119,7 @@ pagead/js/adsbygoogle.js"></script>
                 window.open('https://www.kakaotalk.com', 'sharer', 'toolbar=0,status=0,width=626,height=436');
                 return false;
             }
-        
+
             function shareInstagram() {
                 alert('이미지를 다운로드하여 인스타그램에 공유해주세요!');
                 return false;
