@@ -92,6 +92,9 @@ form {
     padding: 70px;
     border-radius: 5px;
     text-align: center;
+    max-width: 100%; /* 가로폭을 부모 요소의 가로폭에 맞추기 */
+    max-height: 100%; /* 세로폭을 부모 요소의 세로폭에 맞추기 */
+    min-width: 300px; /* 최소 가로폭 설정 */
 }
 
 label {
@@ -124,54 +127,26 @@ input[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
-.additional-links {
-    margin-top: 7px; /* 위쪽 여백 추가 */
-    width: 103%;  /* 부모 요소의 너비를 100%로 설정 */
+.login-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 아이템들을 센터로 정렬 */
 }
 
-.additional-links .button {
-    display: inline-block; /* 인라인 블록으로 설정하여 요소가 옆으로 정렬되도록 함 */
-    text-decoration: none; /* 밑줄 제거 */
-    color: #333; /* 버튼 텍스트 색상 설정 */
-    font-size: 15px; /* 버튼 폰트 크기 설정 */
-    padding: 10px 20px; /* 버튼 내부 여백 설정 */
-    background-color: transparent; /* 버튼 배경색 투명으로 설정 */
-    border: 2px solid #333; /* 버튼 테두리 스타일 및 색상 설정 */
-    border-radius: 5px; /* 버튼 테두리 둥글게 처리 */
-    margin-right: 10px; /* 버튼 간격 설정 */
-    margin-bottom: 10px; /* 아래쪽 여백 설정 */
-    transition: background-color 0.3s, color 0.3s; /* 호버 효과를 위한 전환 효과 설정 */
+.login-links {
+    display: flex;
+    justify-content: center;
+    /* 링크들을 가운데 정렬 */
 }
 
-.additional-links .button:hover {
-    background-color: #333; /* 호버 시 배경색 변경 */
-    color: #fff; /* 호버 시 텍스트 색상 변경 */
-}
-
-/* 푸터 */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    width: 98.94%;
-    position: absolute;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    color: white;
+.login-links .login-link {
     text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    margin: 0 10px;
+    /* 좌우 여백 조절 */
 }
-
-footer a:hover {
-    text-decoration: underline;
-}
-
 /* -----------------------------------------모바일 최적화---------------------------------------- */
 
 /* 모바일 화면에서의 헤더 스타일 */
